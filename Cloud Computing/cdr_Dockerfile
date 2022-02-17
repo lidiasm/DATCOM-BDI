@@ -1,0 +1,17 @@
+# Sistema operativo base en Linux con RStudio 4.1.2 instalado
+FROM rocker/rstudio
+
+# Datos sobre el responsable del contenedor.
+LABEL maintainer="Lidia Sánchez Mérida lidiasm96@correo.ugr.es"
+
+# Copiamos el fichero con las librerías que se deben instalar dentro del contenedor.
+COPY cdr_requirements.R .
+
+# Instalamos las dependencias del fichero anterior ejecutando los comandos `install` de R.
+RUN Rscript cdr_requirements.R 
+
+# Desactivamos el sistema de autenticación que contiene la imagen base
+ENV DISABLE_AUTH=true
+
+# Declaramos el puerto por el que puede recibir peticiones.
+EXPOSE 8002
