@@ -1,0 +1,24 @@
+# Sistema operativo base en Linux con la última versión de Python
+FROM python:latest
+
+# Datos sobre el responsable del contenedor.
+LABEL maintainer="Lidia Sánchez Mérida lidiasm96@correo.ugr.es"
+
+# Copiamos el fichero con las librerías que se deben instalar dentro del contenedor.
+COPY cdpython_requirements.txt .
+
+# Actualizamos el sistema operativo, la herramienta pip e instalamos 
+# las dependencias del fichero anterior.
+RUN apt-get update && pip install --upgrade pip && pip install --requirement cdpython_requirements.txt
+
+# Declaramos el puerto por el que puede recibir peticiones.
+EXPOSE 8001
+
+# Definimos un nuevo usuario y su directorio home para ejecutar los siguientes comandos como usuario no
+# administrador ya que la ejecución del notebook Jupyter se inicia con privilegios
+# de root por defecto.
+RUN useradd -m nonroot
+USER nonroot
+
+# Ejecutamos el notebook de Jupyter en el puerto definido anteriormente
+CMD ["jupyter", "notebook", "--port=8001", "--ip=0.0.0.0"]
