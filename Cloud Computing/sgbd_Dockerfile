@@ -1,0 +1,20 @@
+# Sistema operativo base para desplegar un contenedor con un gestor
+# de bases de datos SQL. Se encuentra basado en Alpine, una 
+# distribución muy liviana de Linux que contiene PostgreSQL
+# ya instalado y listo para su uso.
+FROM postgres:alpine
+
+# Datos sobre el responsable del contenedor.
+LABEL maintainer="Lidia Sánchez Mérida lidiasm96@correo.ugr.es"
+
+# Ejecutamos los siguientes comandos como el usuario por
+# defecto que contiene el motor PostgreSQL
+USER postgres
+
+# Copiamos un script SQL para crear una tabla de ejemplo durante
+# la creación del contenedor. Utilizaremos esta tabla para 
+# realizar diversas inserciones y consultas de prueba.
+COPY init-postgres.sql /docker-entrypoint-initdb.d/
+
+# Declaramos el puerto por el que puede recibir peticiones.
+EXPOSE 5432
