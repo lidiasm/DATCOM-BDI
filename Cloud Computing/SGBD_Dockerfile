@@ -11,6 +11,10 @@ LABEL maintainer="Lidia Sánchez Mérida lidiasm96@correo.ugr.es"
 # defecto que contiene el motor PostgreSQL
 USER postgres
 
+# Definimos una nueva variable de entorno con la contraseña por
+# defecto para el usuario anterior
+ENV POSTGRES_PASSWORD=postgres
+
 # Copiamos un script SQL para crear una tabla de ejemplo durante
 # la creación del contenedor. Utilizaremos esta tabla para 
 # realizar diversas inserciones y consultas de prueba.
