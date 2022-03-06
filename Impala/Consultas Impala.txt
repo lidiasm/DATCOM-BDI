@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS FirewallDB LOCATION '/user/impala/firewall.db';
+SHOW DATABASES;
+USE FirewallDB;
+CREATE TABLE IF NOT EXISTS InternetFirewall (SourcePort INT, DestinationPort INT, NatSourcePort INT, NatDestinationPort INT, Action STRING, Bytes INT, BytesSent INT, BytesReceived INT, Packets INT, ElapsedTime INT, PktsSent INT, PktsReceived INT) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' LINES TERMINATED BY '\n' TBLPROPERTIES("skip.header.line.count"="1");
+LOAD DATA INPATH '/user/impala/FirewallDataInput/log2.csv' OVERWRITE INTO TABLE InternetFirewall;
+SELECT COUNT(*) FROM InternetFirewall;
+SELECT * FROM InternetFirewall LIMIT 3;
+SELECT SourcePort, DestinationPort, BytesSent, Packets FROM InternetFirewall WHERE Action='deny' LIMIT 20;
+
+
+
