@@ -1,3 +1,7 @@
+hdfs dfs -mkdir /user/impala/FirewallDataInput
+hdfs dfs -put log2.csv /user/impala/FirewallDataInput
+hdfs dfs -ls /user/impala/FirewallDataInput
+impala-shell
 CREATE DATABASE IF NOT EXISTS FirewallDB LOCATION '/user/impala/firewall.db';
 SHOW DATABASES;
 USE FirewallDB;
