@@ -1,0 +1,76 @@
+// Importamos la colección de restaurantes en una base de datos denominada 'alumno' a partir del fichero ubicado en la máquina virtual
+mongoimport -u alumno -p alumno --db alumno --authenticationDatabase=admin --collection restaurants --type json --drop --file /var/tmp/restaurantes1.json
+
+// Desde Robo 3T nos situamos en la base de datos anteriormente creada
+use alumno
+
+// Enfoque MapReduce 
+db.runCommand({
+    // Colección sobre la que se pretende realizar la consulta mapReduce
+    mapReduce: 'restaurants',
+    // Filtramos los restaurantes por barrio, cocina y con score menor o igual que 13
+    query: {borough: 'Manhattan', cuisine: 'Spanish', 'grades.score': {$lte: 13}},
+    map: function MapFunction() {
+        // Agrupamos por 'zipcode'
+        let key = this.address.zipcode;
+        // Proyección de los datos para mostrar la cocina, el nombre del restaurante y su dirección
+        // Añadimos las coordenadas de su localización para facilitar el cálculo de la distancia entre dos restaurantes
+        emit(key, {
+            'data': [{
+                    'cuisine': this.cuisine,
+                    'name': this.name,
+                    'address': this.address,
+                    'coordX': this.address.coord[0],
+                    'coordY': this.address.coord[1]
+                }]
+        });
+    },
+    reduce: function ReduceFunction(key, values) {
+        let reducedData = {'data': []};
+        // Almacena los pares de restaurantes más próximos encontrados para cada 'zipcode'
+        for (let i in values) {
+            for (let j in values[i].data) {
+                reducedData.data.push(values[i].data[j]);
+            }
+        }
+        return reducedData;
+    },
+    finalize: function FinalizeFunction(key, reducedData) {
+        // Caso base: solo existe un restaurante en un 'zipcode' por lo que ese es el más próximo
+        if (reducedData.data.length == 1) {
+            return {
+                'restaurant_1': {'cuisine': reducedData.data[0].cuisine, 'name': reducedData.data[0].name, 'address': reducedData.data[0].address},
+                'minDistance': 0.0,
+                'totalRestaurants': reducedData.data.length
+            };
+        }
+        let minDistance = Number.POSITIVE_INFINITY;
+        let rest1, rest2;
+        // Calculamos la distancia entre cada par de restaurantes de un 'zipcode'
+        // en busca de aquellos dos que estén más próximos
+        for (let i in reducedData.data) {
+            for (let j in reducedData.data) {
+                if (i != j) {
+                    // Cálculo de la distancia Euclídea entre dos restaurantes
+                    let distance = Math.sqrt(Math.pow(reducedData.data[i].coordX - reducedData.data[j].coordX, 2) 
+                                    + Math.pow(reducedData.data[i].coordY - reducedData.data[j].coordY, 2));
+                    if (distance < minDistance) {
+                        minDistance = distance;
+                        rest1 = reducedData.data[i];
+                        rest2 = reducedData.data[j];
+                    }
+                }
+            }
+        }
+        // Devuelve el par de restaurantes más próximos de un 'zipcode', la distancia y el número de restaurantes
+        // totales en dicho 'zipcode'
+        return {
+            'restaurant_1': {'cuisine': rest1.cuisine, 'name': rest1.name, 'address': rest1.address},
+            'restaurant_2': {'cuisine': rest2.cuisine, 'name': rest2.name, 'address': rest2.address},
+            'minDistance': minDistance,
+            'totalRestaurants': reducedData.data.length
+        };
+    },
+    // Almacenamos el resultado en otra colección denominada 'rest_mapreduce'
+    out: { replace: 'rest_mapreduce' }
+});
