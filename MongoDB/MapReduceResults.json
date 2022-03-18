@@ -1,0 +1,972 @@
+/* 1 */
+{
+    "_id" : "10017",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "La Fonda Del Sol",
+            "address" : {
+                "building" : "200",
+                "coord" : [ 
+                    -73.9765691, 
+                    40.7535209
+                ],
+                "street" : "Park Avenue",
+                "zipcode" : "10017"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Sophie'S Restaurant",
+            "address" : {
+                "building" : "369",
+                "coord" : [ 
+                    -73.976478, 
+                    40.7504097
+                ],
+                "street" : "Lexington Avenue",
+                "zipcode" : "10017"
+            }
+        },
+        "minDistance" : 0.00311253347771647,
+        "totalRestaurants" : 3.0
+    }
+}
+
+/* 2 */
+{
+    "_id" : "10024",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Mamajuana Cafe",
+            "address" : {
+                "building" : "570",
+                "coord" : [ 
+                    -73.974547, 
+                    40.7888779
+                ],
+                "street" : "Amsterdam Avenue",
+                "zipcode" : "10024"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 3 */
+{
+    "_id" : "10027",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "El Nuevo Tina Restaurant",
+            "address" : {
+                "building" : "511",
+                "coord" : [ 
+                    -73.9564922, 
+                    40.8140035
+                ],
+                "street" : "West  125 Street",
+                "zipcode" : "10027"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "M G M Grocery Store",
+            "address" : {
+                "building" : "1413",
+                "coord" : [ 
+                    -73.954389, 
+                    40.815349
+                ],
+                "street" : "Amsterdam Ave",
+                "zipcode" : "10027"
+            }
+        },
+        "minDistance" : 0.00249676200107866,
+        "totalRestaurants" : 2.0
+    }
+}
+
+/* 4 */
+{
+    "_id" : "10014",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Tacombi At Ganesvoort Market",
+            "address" : {
+                "building" : "52",
+                "coord" : [ 
+                    -74.00702, 
+                    40.739143
+                ],
+                "street" : "Gansevoort Street",
+                "zipcode" : "10014"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Donostia",
+            "address" : {
+                "building" : "52",
+                "coord" : [ 
+                    -74.00702, 
+                    40.739143
+                ],
+                "street" : "Gansevoort Street",
+                "zipcode" : "10014"
+            }
+        },
+        "minDistance" : 0.0,
+        "totalRestaurants" : 7.0
+    }
+}
+
+/* 5 */
+{
+    "_id" : "10029",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "El Chevere Cuchifritos Bakery",
+            "address" : {
+                "building" : "2002",
+                "coord" : [ 
+                    -73.943201, 
+                    40.7941379
+                ],
+                "street" : "3 Avenue",
+                "zipcode" : "10029"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "El Chevere Cuchifritos",
+            "address" : {
+                "building" : "2000",
+                "coord" : [ 
+                    -73.9429024, 
+                    40.7940308
+                ],
+                "street" : "3 Avenue",
+                "zipcode" : "10029"
+            }
+        },
+        "minDistance" : 0.000317226055053622,
+        "totalRestaurants" : 5.0
+    }
+}
+
+/* 6 */
+{
+    "_id" : "10001",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Porteno",
+            "address" : {
+                "building" : "299",
+                "coord" : [ 
+                    -74.002523, 
+                    40.750507
+                ],
+                "street" : "10 Avenue",
+                "zipcode" : "10001"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Txikito",
+            "address" : {
+                "building" : "240",
+                "coord" : [ 
+                    -74.0003123, 
+                    40.747341
+                ],
+                "street" : "9 Avenue",
+                "zipcode" : "10001"
+            }
+        },
+        "minDistance" : 0.00386144409386294,
+        "totalRestaurants" : 3.0
+    }
+}
+
+/* 7 */
+{
+    "_id" : "10021",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Malaga Restaurant",
+            "address" : {
+                "building" : "406",
+                "coord" : [ 
+                    -73.9550129, 
+                    40.768019
+                ],
+                "street" : "East 73 Street",
+                "zipcode" : "10021"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 8 */
+{
+    "_id" : "10040",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Bombonada Restaurant",
+            "address" : {
+                "building" : "1636",
+                "coord" : [ 
+                    -73.928615, 
+                    40.855985
+                ],
+                "street" : "St Nicholas Avenue",
+                "zipcode" : "10040"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Lulo Restaurant",
+            "address" : {
+                "building" : "1626",
+                "coord" : [ 
+                    -73.928811, 
+                    40.8557041
+                ],
+                "street" : "St Nicholas Avenue",
+                "zipcode" : "10040"
+            }
+        },
+        "minDistance" : 0.000342521254808185,
+        "totalRestaurants" : 10.0
+    }
+}
+
+/* 9 */
+{
+    "_id" : "10019",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Diegos Mexican Grill",
+            "address" : {
+                "building" : "714",
+                "coord" : [ 
+                    -73.9892679, 
+                    40.7625816
+                ],
+                "street" : "9 Avenue",
+                "zipcode" : "10019"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 10 */
+{
+    "_id" : "10011",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Boqueria",
+            "address" : {
+                "building" : "53",
+                "coord" : [ 
+                    -73.9937565, 
+                    40.7402297
+                ],
+                "street" : "West 19 Street",
+                "zipcode" : "10011"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Sala One Nine",
+            "address" : {
+                "building" : "35",
+                "coord" : [ 
+                    -73.993084, 
+                    40.740037
+                ],
+                "street" : "West   19 Street",
+                "zipcode" : "10011"
+            }
+        },
+        "minDistance" : 0.000699563821255617,
+        "totalRestaurants" : 13.0
+    }
+}
+
+/* 11 */
+{
+    "_id" : "10023",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Andanada",
+            "address" : {
+                "building" : "141",
+                "coord" : [ 
+                    -73.9815058, 
+                    40.7762217
+                ],
+                "street" : "West 69 Street",
+                "zipcode" : "10023"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 12 */
+{
+    "_id" : "10028",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Le Churro",
+            "address" : {
+                "building" : "1236",
+                "coord" : [ 
+                    -73.9569075, 
+                    40.7779786
+                ],
+                "street" : "Lexington Avenue",
+                "zipcode" : "10028"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 13 */
+{
+    "_id" : "10025",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "New Ranchito",
+            "address" : {
+                "building" : "924",
+                "coord" : [ 
+                    -73.9662705, 
+                    40.8000976
+                ],
+                "street" : "Amsterdam Avenue",
+                "zipcode" : "10025"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Coma Bueno Restaurant",
+            "address" : {
+                "building" : "944",
+                "coord" : [ 
+                    -73.96297, 
+                    40.799641
+                ],
+                "street" : "Columbus Avenue",
+                "zipcode" : "10025"
+            }
+        },
+        "minDistance" : 0.0033319339444038,
+        "totalRestaurants" : 3.0
+    }
+}
+
+/* 14 */
+{
+    "_id" : "10012",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Barca",
+            "address" : {
+                "building" : "244",
+                "coord" : [ 
+                    -73.9956765, 
+                    40.7229659
+                ],
+                "street" : "Mulberry Street",
+                "zipcode" : "10012"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Socarrat Nolita",
+            "address" : {
+                "building" : "284",
+                "coord" : [ 
+                    -73.994899, 
+                    40.724419
+                ],
+                "street" : "Mulberry Street",
+                "zipcode" : "10012"
+            }
+        },
+        "minDistance" : 0.00164803090383476,
+        "totalRestaurants" : 4.0
+    }
+}
+
+/* 15 */
+{
+    "_id" : "10009",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Casa Adela Restaurant",
+            "address" : {
+                "building" : "66",
+                "coord" : [ 
+                    -73.9796792, 
+                    40.7226264
+                ],
+                "street" : "Avenue C",
+                "zipcode" : "10009"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Bikinis",
+            "address" : {
+                "building" : "56",
+                "coord" : [ 
+                    -73.9798268, 
+                    40.7223012
+                ],
+                "street" : "Avenue C",
+                "zipcode" : "10009"
+            }
+        },
+        "minDistance" : 0.000357128548292483,
+        "totalRestaurants" : 6.0
+    }
+}
+
+/* 16 */
+{
+    "_id" : "10035",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Taqueria El Barrio",
+            "address" : {
+                "building" : "2327",
+                "coord" : [ 
+                    -73.934196, 
+                    40.798226
+                ],
+                "street" : "1 Avenue",
+                "zipcode" : "10035"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "La Cocina",
+            "address" : {
+                "building" : "2337",
+                "coord" : [ 
+                    -73.933904, 
+                    40.798536
+                ],
+                "street" : "1 Avenue",
+                "zipcode" : "10035"
+            }
+        },
+        "minDistance" : 0.00042586852431278,
+        "totalRestaurants" : 5.0
+    }
+}
+
+/* 17 */
+{
+    "_id" : "10034",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Apple Garden Cafe",
+            "address" : {
+                "building" : "537",
+                "coord" : [ 
+                    -73.919661, 
+                    40.8656836
+                ],
+                "street" : "West  207 Street",
+                "zipcode" : "10034"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Fantastic Restaurant & Lounge",
+            "address" : {
+                "building" : "238A",
+                "coord" : [ 
+                    -73.91961, 
+                    40.866321
+                ],
+                "street" : "Sherman Avenue",
+                "zipcode" : "10034"
+            }
+        },
+        "minDistance" : 0.000639437064927234,
+        "totalRestaurants" : 9.0
+    }
+}
+
+/* 18 */
+{
+    "_id" : "10032",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "El Gran Valle Iv Restaurant",
+            "address" : {
+                "building" : "1944",
+                "coord" : [ 
+                    -73.942514, 
+                    40.8326131
+                ],
+                "street" : "Amsterdam Avenue",
+                "zipcode" : "10032"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "100% Patacon Cachapa Yaroa",
+            "address" : {
+                "building" : "2011",
+                "coord" : [ 
+                    -73.9407018, 
+                    40.834426
+                ],
+                "street" : "Amsterdam Avenue",
+                "zipcode" : "10032"
+            }
+        },
+        "minDistance" : 0.0025633328402692,
+        "totalRestaurants" : 6.0
+    }
+}
+
+/* 19 */
+{
+    "_id" : "10026",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Que Rico Pollo Restaurant & Grill",
+            "address" : {
+                "building" : "46",
+                "coord" : [ 
+                    -73.9524569, 
+                    40.8000955
+                ],
+                "street" : "Saint Nicholas Avenue",
+                "zipcode" : "10026"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Tropical Grill Restaurant",
+            "address" : {
+                "building" : "1917",
+                "coord" : [ 
+                    -73.9523687, 
+                    40.8029364
+                ],
+                "street" : "7 Avenue",
+                "zipcode" : "10026"
+            }
+        },
+        "minDistance" : 0.00284226882085692,
+        "totalRestaurants" : 2.0
+    }
+}
+
+/* 20 */
+{
+    "_id" : "10036",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Sangria 46",
+            "address" : {
+                "building" : "338",
+                "coord" : [ 
+                    -73.989502, 
+                    40.760198
+                ],
+                "street" : "West   46 Street",
+                "zipcode" : "10036"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Meson Sevilla Restaurant",
+            "address" : {
+                "building" : "344",
+                "coord" : [ 
+                    -73.989693, 
+                    40.760276
+                ],
+                "street" : "West 46 Street",
+                "zipcode" : "10036"
+            }
+        },
+        "minDistance" : 0.000206312869204919,
+        "totalRestaurants" : 2.0
+    }
+}
+
+/* 21 */
+{
+    "_id" : "10022",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Socarrat East",
+            "address" : {
+                "building" : "953",
+                "coord" : [ 
+                    -73.9685614, 
+                    40.7553247
+                ],
+                "street" : "2 Avenue",
+                "zipcode" : "10022"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 22 */
+{
+    "_id" : "10003",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Huertas",
+            "address" : {
+                "building" : "107",
+                "coord" : [ 
+                    -73.986249, 
+                    40.726852
+                ],
+                "street" : "1 Avenue",
+                "zipcode" : "10003"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Euzkadi",
+            "address" : {
+                "building" : "108",
+                "coord" : [ 
+                    -73.988375, 
+                    40.725499
+                ],
+                "street" : "East    4 Street",
+                "zipcode" : "10003"
+            }
+        },
+        "minDistance" : 0.00252001686501529,
+        "totalRestaurants" : 5.0
+    }
+}
+
+/* 23 */
+{
+    "_id" : "10007",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Sophie'S Cuban Cuisine",
+            "address" : {
+                "building" : "96",
+                "coord" : [ 
+                    -74.0076595, 
+                    40.7145744
+                ],
+                "street" : "Chambers Street",
+                "zipcode" : "10007"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 24 */
+{
+    "_id" : "10128",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Libertador",
+            "address" : {
+                "building" : "1725",
+                "coord" : [ 
+                    -73.9504908, 
+                    40.7799956
+                ],
+                "street" : "2 Avenue",
+                "zipcode" : "10128"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 25 */
+{
+    "_id" : "10463",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Love Kafe",
+            "address" : {
+                "building" : "211",
+                "coord" : [ 
+                    -73.9053036, 
+                    40.8791964
+                ],
+                "street" : "West 231St Street",
+                "zipcode" : "10463"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 26 */
+{
+    "_id" : "10013",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Tablao Restaurant",
+            "address" : {
+                "building" : "361",
+                "coord" : [ 
+                    -74.0100244, 
+                    40.7190553
+                ],
+                "street" : "Greenwich Street",
+                "zipcode" : "10013"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 27 */
+{
+    "_id" : "10031",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Solace Bar & Grill",
+            "address" : {
+                "building" : "3496",
+                "coord" : [ 
+                    -73.9511763, 
+                    40.8249069
+                ],
+                "street" : "Broadway",
+                "zipcode" : "10031"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Caridad Restaurant",
+            "address" : {
+                "building" : "3533",
+                "coord" : [ 
+                    -73.9509786, 
+                    40.8264242
+                ],
+                "street" : "Broadway",
+                "zipcode" : "10031"
+            }
+        },
+        "minDistance" : 0.00153012567458752,
+        "totalRestaurants" : 6.0
+    }
+}
+
+/* 28 */
+{
+    "_id" : "10016",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Toledo",
+            "address" : {
+                "building" : "6",
+                "coord" : [ 
+                    -73.9830757, 
+                    40.7492904
+                ],
+                "street" : "East   36 Street",
+                "zipcode" : "10016"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 29 */
+{
+    "_id" : "10033",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Malecon Restaurant",
+            "address" : {
+                "building" : "4141",
+                "coord" : [ 
+                    -73.938824, 
+                    40.84651
+                ],
+                "street" : "Broadway",
+                "zipcode" : "10033"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "El Conde Nuevo Bar & Restaurant",
+            "address" : {
+                "building" : "4139",
+                "coord" : [ 
+                    -73.938775, 
+                    40.8460675
+                ],
+                "street" : "Broadway",
+                "zipcode" : "10033"
+            }
+        },
+        "minDistance" : 0.000445204728178687,
+        "totalRestaurants" : 14.0
+    }
+}
+
+/* 30 */
+{
+    "_id" : "10002",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Balvanera",
+            "address" : {
+                "building" : "152",
+                "coord" : [ 
+                    -73.9853832, 
+                    40.7206224
+                ],
+                "street" : "Stanton Street",
+                "zipcode" : "10002"
+            }
+        },
+        "restaurant_2" : {
+            "cuisine" : "Spanish",
+            "name" : "Ariel'S Tapa Lounge",
+            "address" : {
+                "building" : "293",
+                "coord" : [ 
+                    -73.9840634, 
+                    40.7213153
+                ],
+                "street" : "East Houston Street",
+                "zipcode" : "10002"
+            }
+        },
+        "minDistance" : 0.00149063156078488,
+        "totalRestaurants" : 5.0
+    }
+}
+
+/* 31 */
+{
+    "_id" : "11205",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Manzanilla",
+            "address" : {
+                "building" : "345",
+                "coord" : [ 
+                    -73.9625337, 
+                    40.6962048
+                ],
+                "street" : "Park Avenue",
+                "zipcode" : "11205"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 32 */
+{
+    "_id" : "10018",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "El Sabroso Restaurant",
+            "address" : {
+                "building" : "265",
+                "coord" : [ 
+                    -73.9917475, 
+                    40.75419
+                ],
+                "street" : "West   37 Street",
+                "zipcode" : "10018"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
+
+/* 33 */
+{
+    "_id" : "10037",
+    "value" : {
+        "restaurant_1" : {
+            "cuisine" : "Spanish",
+            "name" : "Tio Luca",
+            "address" : {
+                "building" : "421",
+                "coord" : [ 
+                    -73.9427248, 
+                    40.8117012
+                ],
+                "street" : "Malcolm X Boulevard",
+                "zipcode" : "10037"
+            }
+        },
+        "minDistance" : 0.0,
+        "restCount" : 1.0
+    }
+}
