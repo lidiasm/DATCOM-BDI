@@ -156,17 +156,13 @@ db.runCommand({
                 '$$KEEP', '$$PRUNE']
             }
         },
-        // Filtramos los campos a mostrar en la proyección de las parejas de restaurantes
-        // más próximas por código
+        // Devolvemos las parejas de restaurantes más cercanos resultantes filtrando los campos de la proyección
+        // por la cocina, el nombre, la dirección, la distancia mínima y el total de restaurantes revisados 
         {$project: {
             'zipcode': '$_id',
-            'restaurant_1': '$restPairs.rest1.name',
-            'restaurant_1_cuisine': '$restPairs.rest1.cuisine',
-            'restaurant_1_address': '$restPairs.rest1.address',
-            'restaurant_2': '$restPairs.rest2.name',
-            'restaurant_2_cuisine': '$restPairs.rest2.cuisine',
-            'restaurant_2_address': '$restPairs.rest2.address',
-            'distance': '$minDistance',
+            'restaurant_1': {'cuisine': '$restPairs.rest1.cuisine', 'name': '$restPairs.rest1.name', 'address': '$restPairs.rest1.address'},
+            'restaurant_2': {'cuisine': '$restPairs.rest2.cuisine', 'name': '$restPairs.rest2.name', 'address': '$restPairs.rest2.address'},
+            'minDistance': '$minDistance',
             'totalRestaurants': '$totalRestaurants'
         }},
         // Almacena los documentos resultantes en la colección denominada 'rest_aggregate'
